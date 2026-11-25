@@ -60,10 +60,10 @@ v25.8.2
 ## 3. Ажиллуулах
 
 ```bash
-node server.js                      # нэг terminal-д
+node server.js
 mkdir -p results
 newman run lab05-collection.json 2>&1 | tee results/newman-pass.txt
-echo "exit=${pipestatus[1]}" | tee -a results/newman-pass.txt   # zsh; bash дээр ${PIPESTATUS[0]}
+echo "exit=${pipestatus[1]}" | tee -a results/newman-pass.txt
 ```
 
 ## 4. Үр дүн
